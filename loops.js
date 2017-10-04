@@ -14,5 +14,8 @@ function whileLoop(n){
 function doWhileLoop(array){
   do{
     array.pop()
-  }(!array.isEmpty() || maybeTrue())
+  }(array.length > 0 || maybeTrue())
+}
+function maybeTrue() {
+  return Math.random() >= 0.5
 }
